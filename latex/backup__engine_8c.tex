@@ -1,0 +1,53 @@
+\doxysection{backup\+\_\+engine.\+c File Reference}
+\hypertarget{backup__engine_8c}{}\label{backup__engine_8c}\index{backup\_engine.c@{backup\_engine.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+Include dependency graph for backup\+\_\+engine.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backup__engine_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{backup__engine_8c_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}~4096
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{backup__engine_8c_aefe758edbe9e24e943d5bf247c087f35}{copy\+\_\+file\+\_\+syscall}} (const char \texorpdfstring{$\ast$}{*}src, const char \texorpdfstring{$\ast$}{*}dest)
+\item 
+void \mbox{\hyperlink{backup__engine_8c_a21d5d55d78a01af071b796fb47761df1}{copy\+\_\+file\+\_\+std}} (const char \texorpdfstring{$\ast$}{*}src, const char \texorpdfstring{$\ast$}{*}dest)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{backup__engine_8c_a6b20d41d6252e9871430c242cb1a56e7}\label{backup__engine_8c_a6b20d41d6252e9871430c242cb1a56e7} 
+\index{backup\_engine.c@{backup\_engine.c}!BUFFER\_SIZE@{BUFFER\_SIZE}}
+\index{BUFFER\_SIZE@{BUFFER\_SIZE}!backup\_engine.c@{backup\_engine.c}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SIZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define BUFFER\+\_\+\+SIZE~4096}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{backup__engine_8c_a21d5d55d78a01af071b796fb47761df1}\label{backup__engine_8c_a21d5d55d78a01af071b796fb47761df1} 
+\index{backup\_engine.c@{backup\_engine.c}!copy\_file\_std@{copy\_file\_std}}
+\index{copy\_file\_std@{copy\_file\_std}!backup\_engine.c@{backup\_engine.c}}
+\doxysubsubsection{\texorpdfstring{copy\_file\_std()}{copy\_file\_std()}}
+{\footnotesize\ttfamily void copy\+\_\+file\+\_\+std (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{src,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{dest }\end{DoxyParamCaption})}
+
+\Hypertarget{backup__engine_8c_aefe758edbe9e24e943d5bf247c087f35}\label{backup__engine_8c_aefe758edbe9e24e943d5bf247c087f35} 
+\index{backup\_engine.c@{backup\_engine.c}!copy\_file\_syscall@{copy\_file\_syscall}}
+\index{copy\_file\_syscall@{copy\_file\_syscall}!backup\_engine.c@{backup\_engine.c}}
+\doxysubsubsection{\texorpdfstring{copy\_file\_syscall()}{copy\_file\_syscall()}}
+{\footnotesize\ttfamily void copy\+\_\+file\+\_\+syscall (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{src,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{dest }\end{DoxyParamCaption})}
+

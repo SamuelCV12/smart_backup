@@ -1,0 +1,5 @@
+html/
+*.o
+*.bin
+*.bak
+smart_backup

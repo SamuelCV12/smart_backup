@@ -1,0 +1,34 @@
+# ======================================================================
+# Doxyfile Configurado para: smart_backup
+# ======================================================================
+
+# --- 1. Identificación del Proyecto ---
+PROJECT_NAME           = "smart_backup"
+PROJECT_BRIEF          = "Análisis de rendimiento E/S: System Calls vs Librería Estándar C"
+PROJECT_NUMBER         = "1.0"
+
+# --- 2. Optimización para el Lenguaje C ---
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = YES
+
+# --- 3. Extracción de Documentación ---
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# --- 4. Entradas (Qué archivos va a leer) ---
+INPUT                  = .
+FILE_PATTERNS          = *.c *.h
+RECURSIVE              = NO
+
+# --- 5. Salidas (Qué va a generar) ---
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# --- 6. Apariencia y Consola ---
+QUIET                  = YES
+WARNINGS               = YES
