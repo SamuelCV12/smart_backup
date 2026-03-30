@@ -1,5 +1,37 @@
-html/
+# Compilación y Binarios 
+smart_backup
+a.out
 *.o
 *.bin
+*.elf
+
+# Evita subir los archivos de 1GB, 1MB y 1KB creados por el main
+*1KB*
+*1MB*
+*1GB*
+
+# Backups y Resultados de Ejecución 
+# Archivos generados durante el benchmark (.bak)
 *.bak
-smart_backup
+*_syscall.bak
+*_std.bak
+
+# Carpetas donde se realizan los respaldos de prueba
+backup_final/
+mi_respaldo/
+backup_dest/
+
+# Documentación (Doxygen) 
+# Ignora toda la carpeta de documentación generada
+doc/
+html/
+latex/
+Doxyfile.bak
+
+# Basura del Sistema y Editores 
+.vscode/
+.idea/
+.DS_Store
+*~
+*.swp
+*.save
