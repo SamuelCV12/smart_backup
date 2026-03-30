@@ -96,7 +96,7 @@
      else {
          printf("Modo: Comparativa de Rendimiento (Archivo Único)\n");
          
-         // CORRECCIÓN VISUAL: Unidades dinámicas para evitar el "0.00 MB"
+         // Unidades dinámicas para evitar el "0.00 MB"
          if (st.st_size < 1024) {
              printf("Tamaño del archivo: %ld Bytes\n", st.st_size);
          } else if (st.st_size < 1024 * 1024) {
